@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: ;
+}
+body{
+    background-color: rgb(192, 192, 192);
+}
+
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    align-items: center;
+    
+}
+
+.navleft{
+    display: flex;
+}
+.navleft .searchbox{
+    display: flex;
+    
+}
+
+.navmid .btn{
+    width: 120px;
+}
+
+.navright .btnright{
+
+    border-radius: 100px;
+    margin: 2px 6px;
+
+}
