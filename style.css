@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: ;
+    
 }
 body{
     background-color: rgb(192, 192, 192);
@@ -10,5 +10,55 @@ body{
 .navbar{
     background-color: rgb(66, 108, 224);
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .leftnav{
+    display: flex;
+    align-items: center;
+}
+.navbar .leftnav .searchbox{
+    display: flex;
+    align-items: center;
+    width: 300px;
+    background-color: white;
+    border-radius: 50px;
+}
+/* .navbar .leftnav div img{
+    height: 42px;
+    background-color: white;
+    border-radius: 25px 0 0 25px;
+    border-color: white;
+    
+
+ } */
+.navbar .leftnav div input{
+   height: 40px;
+   width: 75%;
+   border-color: white;
+   border: 0;
+   font-size: 2rem;
+}
+.navbar .midnav ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    
+}
+.navbar .midnav ul img{
+    margin: 0px 28px;
+    
+}
+
+.navbar .rightnav ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+.navbar .rightnav ul li{
+    border-radius: 50px;
+    background-color: white;
+
 }
 
