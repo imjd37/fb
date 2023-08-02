@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     
 }
 body{
@@ -12,6 +13,9 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 .navbar .leftnav{
@@ -21,6 +25,7 @@ body{
 .navbar .leftnav .searchbox{
     display: flex;
     align-items: center;
+    margin: 4px 0 4px 0;
     width: 300px;
     background-color: white;
     border-radius: 50px;
@@ -57,8 +62,176 @@ body{
     align-items: center;
 }
 .navbar .rightnav ul li{
-    border-radius: 50px;
-    background-color: white;
+    margin-right: 10px;
+   
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    padding: 13px 5% ;
+}
+
+.container .left-sidebar{
+   
+    flex-basis: 25%;
+    position: sticky;
+    top: 70px;
+    align-self: flex-start;
+    
+
+}
+.imp-link{
+    border-bottom: 1px solid black;
+}
+
+.imp-link a{
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    margin-bottom: 20px;
+    color: black;
+    width: fit-content;
+ 
+    
+}
+.imp-link a img{
+    width: 35px;
+    margin-right: 15px;
+
+}
+.imp-link a:last-child{
+    color: rgb(44, 111, 199);
+}
+
+
+.container .right-sidebar{
+    background: white;
+    flex-basis: 25%;
+    position: sticky;
+    top: 70px;
+    align-self: flex-start;
+    padding: 20px;
+    border-radius:4px ;
+    color: rgb(68, 67, 67);
+
 
 }
 
+
+.shortcut{
+    display: flex;
+    flex-direction: column
+    ;
+
+}
+
+.shortcut a{
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    margin-bottom: 0px;
+    color: black;
+    width: fit-content;
+}
+
+.shortcut P{
+    margin 25 0;
+    color: blue;
+    font-size: 1.5rem;
+}
+
+
+.events{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 18px;
+
+}
+
+.events h4{
+    font-weight: 600;
+    font-size: 16px;
+
+}
+.events a{
+    text-decoration: none;
+    color: blue;
+    font-size: 16px;
+}
+
+.event{
+    display: flex;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.leftevent{
+    border-radius: 10px;
+    height: 65px;
+    width: 65px;
+    margin-right: 15px;
+    padding-top: 10px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 10px wheat;
+}
+
+
+.event p{
+    font-size: 12px;
+
+}
+
+.event a{
+    font-size: 12px;
+    text-decoration: none;
+    
+}
+.leftevent span{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgb(135, 129, 219);
+    color: white;
+    font-size: 10px;
+    padding: 4px 0;
+}
+
+.onlinelist{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.onlinelist .online img{
+    width: 40px;
+    border-radius: 50%;
+
+
+}
+.onlinelist .online{
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 15px;
+   
+   
+
+
+}
+
+.onlinelist .dot{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgb(34, 214, 58);
+    position: absolute ;
+
+}
+
+.onlinelist .dot::after{
+    top:;
+    bottom: 0px;
+}
