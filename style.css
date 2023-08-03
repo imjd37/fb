@@ -136,8 +136,8 @@ body{
 }
 
 .shortcut P{
-    margin 25 0;
-    color: blue;
+    margin: 25px 0;
+    color: rgb(91, 91, 211);
     font-size: 1.5rem;
 }
 
@@ -231,7 +231,3 @@ body{
 
 }
 
-.onlinelist .dot::after{
-    top:;
-    bottom: 0px;
-}
