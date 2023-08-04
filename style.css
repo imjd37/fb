@@ -208,7 +208,9 @@ body{
 }
 .onlinelist .online img{
     width: 40px;
+    height: 40px;
     border-radius: 50%;
+
 
 
 }
@@ -242,7 +244,7 @@ body{
 flex-basis: 18%;
 padding-top: 32%;
 position: relative;
-background-image: linear-gradient(transparent,black), url(imgs/IMG_20220915_220746_409.png);
+background-image: linear-gradient(transparent,black), url(imgs/stat1.jpg);
 background-size: cover;
 border-radius: 10px;
 
@@ -250,11 +252,12 @@ border-radius: 10px;
 
 .story img{
     position: absolute;
-    width: 45px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     top: 10px;
     left: 10px;
-    border-radius: 5px solid blue;
+    border: 3px solid rgb(22, 138, 192);
 
 }
 .story p{
@@ -272,3 +275,117 @@ border-radius: 10px;
     width: 100%;
 }
 
+.story1{
+    background-image: linear-gradient(transparent,black), url(imgs/stat1.jpg);
+
+}
+.story2{
+    background-image: linear-gradient(transparent,black), url(imgs/stat2.jpg);
+
+}
+
+.story3{
+    background-image: linear-gradient(transparent,black), url(imgs/stat3.jpg);
+
+}
+
+.story4{
+    background-image: linear-gradient(transparent,black), url(imgs/stat4.jpg);
+
+}
+
+.story.story1 img{
+    top: unset;
+    left: 50%;
+    bottom: 40px;
+    transform: translateX(-50%);
+    border: 0;
+    width: 40px;
+}
+
+.writepostcontainer{
+    width: 100%;
+    background: white;
+    border-radius: 6px;
+    padding: 20px;
+    color: rgb(185, 183, 183);
+
+}
+
+.userprofile{
+    display: flex;
+    align-items: center;
+
+}
+
+.userprofile img{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.userprofile p{
+    margin-bottom: -5px;
+    font-weight: 500;
+    color: rgb(99, 97, 97);
+
+}
+
+.userprofile small{
+    font-size: 12px;
+}
+
+
+.postinput{
+    padding-left: 55px;
+    padding-top: 20px;
+
+}
+
+.postinput textarea{
+    width: 100%;
+    border: 0;
+    outline: 0;
+    border-bottom: 1px solid #ccc;
+    background: transparent;
+    resize: none;
+    
+}
+
+.addpostlink{
+    display: flex;
+    margin-top: 10px;
+}
+.addpostlink a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #626262;
+    margin-right: 30px;
+    font-size: 13px;
+}
+.addpostlink a img{
+    width: 20px;
+    margin-right: 10px;
+}
+
+.postcontainer{
+    width: 100%;
+    background: white;
+    border-radius: 6px;
+    padding: 20px;
+    color: gray;
+    margin: 20px 0;
+}
+
+.userprofile span{
+    font-size: 13px;
+    color: gray;
+}
+
+.postimg{
+    width: 100%;
+    border-radius: 4px;
+    margin-bottom: 5px;
+}
