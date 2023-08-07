@@ -56,13 +56,23 @@ body{
     
 }
 
-.navbar .rightnav ul{
+.rightnav{
     display: flex;
     list-style: none;
     align-items: center;
+    margin-right: 50px;
+
 }
+
+.rightnav img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin: 0 10px 0 10px;
+}
+
 .navbar .rightnav ul li{
-    margin-right: 10px;
+    
    
 }
 
@@ -437,4 +447,68 @@ margin-right: 30px;
     height: 20px;
     border-radius: 50%;
     margin-right: 5px;
+}
+
+
+
+
+
+.settingmenu{
+        position: absolute;
+        width: 30%;
+        max-width: 350%;
+        
+        background: white;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.637);
+        border-radius: 4px;
+        overflow: hidden;
+        top: 108%;
+        right: 5%;
+        max-height: 0;
+        transition: max-height 0.3s;
+}
+
+.settingmenuheight{
+    max-height: 450px;
+}
+
+.userprofile a{
+    font-size: 12px;
+    color: rgb(56, 154, 235);
+    text-decoration: none;
+}
+
+
+.settingmenuinner{
+    padding: 20px;
+}
+
+.settingmenu hr{
+    border: 0;
+    height: 1px;
+    background: rgb(179, 178, 178);
+    margin: 15px 0;
+
+}
+
+.settinglinks{
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+
+}
+
+.settinglinks .settingicon{
+    width: 38px;
+    margin-right: 10px;
+    border-radius: 55%;
+    
+}
+.settinglinks a{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    color: black;
 }
