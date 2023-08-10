@@ -11,6 +11,7 @@ body{
 .navbar{
     background-color: rgb(66, 108, 224);
     display: flex;
+    
     align-items: center;
     justify-content: space-between;
     position: sticky;
@@ -71,10 +72,6 @@ body{
     margin: 0 10px 0 10px;
 }
 
-.navbar .rightnav ul li{
-    
-   
-}
 
 .container{
     display: flex;
@@ -511,4 +508,20 @@ margin-right: 30px;
     justify-content: space-between;
     text-decoration: none;
     color: black;
+}
+
+@media (max-width: 1000px){
+
+    .container .right-sidebar{
+        display: none;
+    }
+
+    .navbar .leftnav .searchbox{
+        display: none;
+    }
+
+    .container .left-sidebar{
+        display: none;
+    }
+
 }
