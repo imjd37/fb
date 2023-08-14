@@ -8,6 +8,10 @@ body{
     background-color: rgb(192, 192, 192);
 }
 
+body.active{
+    background-color: rgb(36, 35, 35);
+}
+
 .navbar{
     background-color: rgb(66, 108, 224);
     display: flex;
@@ -454,20 +458,60 @@ margin-right: 30px;
         position: absolute;
         width: 30%;
         max-width: 350%;
-        
         background: white;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.637);
         border-radius: 4px;
         overflow: hidden;
+        
         top: 108%;
-        right: 5%;
-        max-height: 0;
+        right: 7%;
+        max-height: 0px;
         transition: max-height 0.3s;
 }
 
 .settingmenuheight{
     max-height: 450px;
 }
+
+#darkmode{
+    
+}
+.darkmodecontainer{
+    background-color: rgb(225, 241, 241);
+    height: 20px;
+    width: 50px;
+    border-radius: 30px;
+    position: absolute;
+    right: 20px;
+}
+.darktoggle{
+    background-color: rgb(163, 247, 247);
+    height: 20px;
+    width: 50px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+   
+}
+.darktoggle.active{
+    background-color: rgb(19, 19, 19);
+}
+
+.darktoggle.active .dark-button{
+    left: 30px;
+} 
+.dark-button{
+    background-color: #626262;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    position: absolute;
+    left: 5px;
+    
+}
+
+
 
 .userprofile a{
     font-size: 12px;
@@ -500,7 +544,7 @@ margin-right: 30px;
     margin-right: 10px;
     border-radius: 55%;
     
-}
+} 
 .settinglinks a{
     display: flex;
     flex: 1;

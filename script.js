@@ -8,8 +8,15 @@ function settingsmenutoggle(){
 }
 
 
-document.getElementById("darkmode").onclick = function(){
-    document.body.style.backgroundColor = "#414141"
-   
+
+let darktoggle= document.querySelector(".darktoggle");
+let bdy=document.querySelector("body")
+
+function btnclicked(){
+    darktoggle.classList.toggle("active")
+    bdy.classList.toggle("active")
+
+
 }
+
 
